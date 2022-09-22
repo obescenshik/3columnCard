@@ -1,0 +1,127 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 65%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+img {
+    width: 4rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    line-height: 2;
+    justify-content: flex-start;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 1rem 2rem;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+/* INDIVIDUAL CARDS */
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+/* INDIVIDUAL CARDS */
+
+
+/* BUTTONS */
+#sedans > button {
+    color: hsl(31, 77%, 52%);
+}
+
+#suvs > button {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury > button {
+    color: hsl(179, 100%, 13%);
+}
+
+#sedans > button:hover {
+    background-color: rgba(0,0,0,0);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+#suvs > button:hover {
+    background-color: rgba(0,0,0,0);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+#luxury > button:hover {
+    background-color: rgba(0,0,0,0);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+
+/* BUTTONS */
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    button {
+        margin-top: 0;
+    }
+
+    html {
+        height: auto;
+    }
+    
+    
+    main {
+        padding: 2rem;
+    }
+}
